@@ -1,6 +1,6 @@
 import callAPI from '../config/api';
 
-const ROOT_API = process.env.NEXT_PUBLIC_API;
+const ROOT_API = "https://gamestorebe.herokuapp.com/";
 const API_VERSION = 'api/v1';
 
 export async function getMemberOverview() {
