@@ -2,7 +2,7 @@ import axios from 'axios';
 import callAPI from '../config/api';
 import { CheckoutTypes } from './data-types';
 
-const ROOT_API = "https://gamestorebe.herokuapp.com/";
+const ROOT_API = process.env.NEXT_PUBLIC_API;
 const API_VERSION = 'api/v1';
 
 export async function getFeaturedGame() {

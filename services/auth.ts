@@ -1,7 +1,7 @@
 import callAPI from '../config/api';
 import { LoginTypes } from './data-types';
 
-const ROOT_API = "https://gamestorebe.herokuapp.com/";
+const ROOT_API = process.env.NEXT_PUBLIC_API;
 const API_VERSION = 'api/v1';
 
 export async function setSignUp(data: FormData) {
